@@ -3,14 +3,13 @@ message: "If you use this code, please cite the article and this archived releas
 title: "QSPR machine learning models for coal based jet fuel properties"
 type: software
 authors:
-  - family-names: "TODO"
-    given-names: "TODO"
-    affiliation: "TODO"
+  - family-names: "Heng"
+    given-names: "Sheng"
+    affiliation: "Northwest University"
 version: "1.0.0"
 date-released: "2026-11-24"
 license: MIT
-repository-code: "https://github.com/TODO/jetfuel-qspr-ml"
-keywords:
+repository-code:  "https://github.com/heng-sheng66/jet-fuel-qspr-ml"
   - QSPR
   - machine learning
   - jet fuel
