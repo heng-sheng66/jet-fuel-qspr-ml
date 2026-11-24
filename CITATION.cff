@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article and this archived release."
+title: "QSPR machine learning models for coal based jet fuel properties"
+type: software
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+    affiliation: "TODO"
+version: "1.0.0"
+date-released: "2026-11-24"
+license: MIT
+repository-code: "https://github.com/TODO/jetfuel-qspr-ml"
+keywords:
+  - QSPR
+  - machine learning
+  - jet fuel
+  - Mordred descriptors
+  - support vector regression
+  - SHAP

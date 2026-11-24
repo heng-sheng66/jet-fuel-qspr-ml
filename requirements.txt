@@ -1,0 +1,6 @@
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.4
+mlxtend>=0.23
+shap>=0.46
+openpyxl>=3.1
