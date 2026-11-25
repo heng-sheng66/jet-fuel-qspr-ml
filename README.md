@@ -76,7 +76,7 @@ expects an `.xlsx` workbook with the following layout.
 | --- | --- |
 | `sample` (or `id`, `No`, `Index`) | Sample identifier, ignored as a feature |
 | descriptor columns | Mole fraction weighted Mordred 2D descriptors, one column per descriptor |
-| target column | Measured property; the header contains the property name, either in English (`density`, `flash`, `freez`, `viscosity`)|
+| target column | Measured property; `density`, `flash`, `freez`, `viscosity`|
 
 Columns that are entirely empty or entirely zero, or that contain any missing
 value, are dropped automatically. Rows without a target value are dropped.
