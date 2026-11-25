@@ -42,7 +42,7 @@ n-1 subset.
 
 | File | Purpose |
 | --- | --- |
-| `step1_model_screening.py` | Descriptor screening, hyperparameter search, test set scores (SI Table S1 and the model comparison table) |
+| `step1_model_screening.py` | Descriptor screening, hyperparameter search, test set scores  |
 | `step2_loo_cv.py` | Leave one out cross validation of the best model per property |
 | `step3_validation.py` | Predictions on an independent validation workbook |
 | `step4_shap_analysis.py` | SHAP values for the best model per property |
@@ -76,7 +76,7 @@ expects an `.xlsx` workbook with the following layout.
 | --- | --- |
 | `sample` (or `id`, `No`, `Index`) | Sample identifier, ignored as a feature |
 | descriptor columns | Mole fraction weighted Mordred 2D descriptors, one column per descriptor |
-| target column | Measured property; the header contains the property name, either in English (`density`, `flash`, `freez`, `viscosity`) or in the Chinese form used by the authors' workbook (stored as unicode escapes in the scripts) |
+| target column | Measured property; the header contains the property name, either in English (`density`, `flash`, `freez`, `viscosity`)|
 
 Columns that are entirely empty or entirely zero, or that contain any missing
 value, are dropped automatically. Rows without a target value are dropped.
@@ -99,7 +99,7 @@ python step1_model_screening.py --data /path/to/training_data.xlsx --outdir resu
 
 Useful options: `--seeds 42 7 2024` (one sub directory per seed),
 `--properties Density Flash_Point` (subset), `--max-sfs 30`,
-`--corr-threshold 0.9`, `--test-size 0.2`, `--cv 5`, `--n-jobs 4`.
+`--corr-threshold 0.9`, `--test-size 0.2`, `--cv 5`.
 
 Steps 2 to 4 reuse `results/seed_42/Final_Selected_Descriptors.csv` by default:
 
@@ -119,7 +119,7 @@ step 1 is rerun on other data, copy the new winners from
 
 | File | Content |
 | --- | --- |
-| `results/seed_<seed>/Table_S1_<Property>.csv` | Descriptor added at each SFS step with mean and standard deviation of the cross validated R2 (SI Table S1) |
+| `results/seed_<seed>/Table_S1_<Property>.csv` | Descriptor added at each SFS step with mean and standard deviation of the cross validated R2 |
 | `results/seed_<seed>/Final_Selected_Descriptors.csv` | Final descriptor list per property, in selection order |
 | `results/seed_<seed>/model_performance_summary.xlsx` | Train and test R2, RMSE and MAE for the six algorithms, with the selected hyperparameters |
 | `results/seed_<seed>/predictions_detail.xlsx` | Measured and predicted values for every sample and model |
