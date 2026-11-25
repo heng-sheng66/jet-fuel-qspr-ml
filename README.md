@@ -94,7 +94,7 @@ Step 1, all four properties, seed 42:
 python step1_model_screening.py --data /path/to/training_data.xlsx --outdir results
 ```
 
-Useful options: `--seeds 42 7 2024` (one sub directory per seed),
+Useful options: `--seeds 42` ,
 `--properties Density Flash_Point` (subset), `--max-sfs 30`,
 `--corr-threshold 0.9`, `--test-size 0.2`, `--cv 5`.
 
