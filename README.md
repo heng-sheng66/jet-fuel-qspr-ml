@@ -133,20 +133,7 @@ fits one random forest per candidate descriptor per step and fold.
 
 Step 2 needs about 10 s per property for 300 samples. Step 4 takes roughly
 5 to 15 min per property with 300 samples and 15 descriptors, because kernel
-SHAP scales with the number of samples and with the background set.
-
-## Notes and limitations
-
-* SFS uses R2 with 5 fold cross validation on the training set; the best step is
-  the one with the highest mean cross validated R2, not a fixed number of
-  descriptors.
-* SHAP values in step 4 are computed for all samples of the training workbook
-  after the model has been fitted on the training split, matching the figures
-  in the manuscript.
-* Kernel SHAP is approximate for SVR; results depend slightly on the background
-  sample, which is drawn with the fixed random seed.
-* Single seed runs are reported in the manuscript. `--seeds` is provided for
-  checking seed sensitivity.
+SHAP scales with the number of samples and with the background set
 
 ## Data availability
 
