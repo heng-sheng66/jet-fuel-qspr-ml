@@ -43,7 +43,7 @@ n-1 subset.
 | File | Purpose |
 | --- | --- |
 | `step1_model_screening.py` | Descriptor screening, hyperparameter search, test set scores  |
-| `step2_loo_cv.py` | Leave one out cross validation of the best model per property |
+| `step2_loo_cv.py` | Leave-one-out-cross validation of the best model per property |
 | `step3_validation.py` | Predictions on an independent validation workbook |
 | `step4_shap_analysis.py` | SHAP values for the best model per property |
 | `config/Final_Selected_Descriptors.csv` | Descriptors selected in the reported run, for reference |
@@ -82,10 +82,7 @@ Columns that are entirely empty or entirely zero, or that contain any missing
 value, are dropped automatically. Rows without a target value are dropped.
 
 **Validation workbook**: one sheet per property, named either `Density`,
-`Flash_Point`, `Freezing_Point`, `Viscosity` or with the Chinese names used by
-the authors' workbook (unicode escapes in the scripts), with an identifier
-column (`sample`, `ID`, `No`, ...)
-and one column per descriptor selected in step 1. Feature names must match the
+`Flash_Point`, `Freezing_Point`, `Viscosity` and one column per descriptor selected in step 1. Feature names must match the
 step 1 selection exactly; the script reports missing or unexpected columns and
 suggests near matches.
 
