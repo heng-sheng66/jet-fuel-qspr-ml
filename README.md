@@ -133,8 +133,7 @@ fits one random forest per candidate descriptor per step and fold.
 
 Step 2 needs about 10 s per property for 300 samples. Step 4 takes roughly
 5 to 15 min per property with 300 samples and 15 descriptors, because kernel
-SHAP scales with the number of samples and with the background set
-(`--background 100` by default).
+SHAP scales with the number of samples and with the background set.
 
 ## Notes and limitations
 
