@@ -66,7 +66,7 @@ scikit learn 1.9, mlxtend 0.25, shap 0.52 and openpyxl 3.1.
 
 ## Input data
 
-The datasets are not redistributed here (see *Data availability*). Each script
+The datasets are not redistributed here. Each script
 expects an `.xlsx` workbook with the following layout.
 
 **Training workbook**: one sheet per property, named `Density`,
