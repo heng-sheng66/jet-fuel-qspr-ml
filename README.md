@@ -95,7 +95,7 @@ python step1_model_screening.py --data /path/to/training_data.xlsx --outdir resu
 ```
 
 Useful options: `--seeds 42` ,
-`--properties Density Flash_Point` (subset), `--max-sfs 30`,
+`--properties Density Flash_Point Freezing_Point Viscosity` , `--max-sfs 30`,
 `--corr-threshold 0.9`, `--test-size 0.2`, `--cv 5`.
 
 Steps 2 to 4 reuse `results/seed_42/Final_Selected_Descriptors.csv` by default:
